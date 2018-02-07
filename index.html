@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>upMeet</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <!-- Link to CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+    <!-- Themes for JS Picker Time and Date (required) -->
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/default.date.css">
+    <link rel="stylesheet" type="text/css" href="css/default.time.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="row" id="deveet-row">
+        <!-- Title -->
+        <div class="col-md-10"><img src="images/devmeet-logo.svg" id="devmeet-logo"></div>
+
+        <div class="col-md-2" id="lgsu">
+            <button class="pure-button" id="login">LOGIN</button>
+            <button class="pure-button" id="sign-up">SIGN-UP</button>
+            <button class="pure-button" id="signout-btn">SIGN-OUT</button>
+        </div>
+
+
+        <!--==============================LOG-IN FORM============================-->
+        <div id="log-sign-in">
+            <div class="pure-u-3-4">
+                <div class="pure-form" id="login-2">
+                    <input type="email" placeholder="Email Address" id="user-name">
+                    <input type="password" placeholder="Password" id="current-password">
+                    <button class="pure-button pure-button-active" id="btn-login">LOGIN</button>
+                </div>
+            </div>
+            <!--===================SIGN-UP FORM=======================================-->
+            <div class="pure-u-3-4">
+                <div class="pure-form" id="sign-up-2">
+                    <input type="email" placeholder="Email" id="user-email">
+                    <input type="password" placeholder="Password" id="user-password">
+                    <button class="pure-button pure-button-active" id="btn-add">SIGN UP</button>
+                </div>
+            </div>
+            <!-- end #log-sign-in -->
+        </div>
+
+        <!-- end Navbar-->
+    </div>
+
+    <!--=====================================CAROUSEL=======================================-->
+    <div id="carousel-example-generic" class="carousel slide jumbotron" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <h1>How does it work?</h1>
+                <p class="lead">Choose the Location you want to meet at and time you are available</p>
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <h1>View the available Resources</h1>
+                <p class="lead">Check out our resources below to help prepare you for your devMeet experience</p>
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <h1>Location Services</h1>
+                <p class="lead">Need help finding your devMeet? Use the easy to use Google Maps</p>
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!--end carousel-->
+    </div>
+
+    <div class="container">
+        <!--=====================================INPUT FORM=======================================-->
+
+        <!-- User selects MeetUp -->
+        <div class="row">
+            <form>
+                <div class="col-md-5ths col-xs-6">
+                    <h2>Language/Frameworks</h2>
+                    <input type="text" class="form-control" id="search-subject" placeholder="Subject...">
+                    <label for="devMeet"></label>
+                </div>
+
+                <!-- User Selects Date -->
+                <div class="col-md-5ths col-xs-6">
+                    <h2>Date</h2>
+                    <input type="text" class="form-control" id="datepicker" placeholder="Select Date...">
+                    <label for="datepicker"></label>
+                </div>
+
+                <!-- User Selects Time -->
+                <div class="col-md-5ths col-xs-6">
+                    <h2>Time</h2>
+                    <input type="text" class="form-control" id="timepicker" placeholder="Select Time...">
+                    <label for="datepicker"></label>
+                </div>
+
+                <!-- User Selects Address -->
+                <div class="col-md-5ths col-xs-6">
+                    <h2>Location</h2>
+                    <input type="text" class="form-control" id="search-address" placeholder="ex: Dallas, TX">
+                    <label for="Address"></label>
+                </div>
+
+                <div class="col-md-5ths col-xs-6">
+                    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" id="user-submit">Submit</button>
+                </div>
+
+        </div>
+        </form>
+
+       
+    </div>
+    <div id="footer">
+        <p>&copy; 2018 devMeet - Sandra Marquez</p>
+    </div>
+    
+</body>
+
+</html>
