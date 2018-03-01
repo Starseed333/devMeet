@@ -26,18 +26,18 @@
 <body>
 
     <!-- Navbar -->
-    <div class="row" id="deveet-row">
+    <div class="row" id="devmeet-row">
         <!-- Title -->
-        <div class="col-md-10"><img src="images/devmeet-logo.svg" id="devmeet-logo"></div>
+        <!-- <div class="col-md-10"><img src="images/devmeet-logo.svg" id="devmeet-logo"></div> -->
 
-        <div class="col-md-2" id="lgsu">
+        <div class="col-md-2" id="logsign">
             <button class="pure-button" id="login">LOGIN</button>
             <button class="pure-button" id="sign-up">SIGN-UP</button>
             <button class="pure-button" id="signout-btn">SIGN-OUT</button>
         </div>
 
 
-        <!--==============================LOG-IN FORM============================-->
+        <!-- Login Form -->
         <div id="log-sign-in">
             <div class="pure-u-3-4">
                 <div class="pure-form" id="login-2">
@@ -46,7 +46,7 @@
                     <button class="pure-button pure-button-active" id="btn-login">LOGIN</button>
                 </div>
             </div>
-            <!--===================SIGN-UP FORM=======================================-->
+            <!-- Sign Up Form -->
             <div class="pure-u-3-4">
                 <div class="pure-form" id="sign-up-2">
                     <input type="email" placeholder="Email" id="user-email">
@@ -59,8 +59,7 @@
 
         <!-- end Navbar-->
     </div>
-
-    <!--=====================================CAROUSEL=======================================-->
+    <!-- Carousel -->
     <div id="carousel-example-generic" class="carousel slide jumbotron" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -68,7 +67,7 @@
             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
         </ol>
-        <!-- Wrapper for slides -->
+        <!-- Slide -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
                 <h1>How does it work?</h1>
@@ -102,28 +101,29 @@
     </div>
 
     <div class="container">
-        <!--=====================================INPUT FORM=======================================-->
 
-        <!-- User selects MeetUp -->
+        <!-- Input Form -->
+
+        <!-- User selects Location -->
         <div class="row">
             <form>
                 <div class="col-md-5ths col-xs-6">
-                    <h2>Language/Frameworks</h2>
-                    <input type="text" class="form-control" id="search-subject" placeholder="Subject...">
+                    <h2>Language</h2>
+                    <input type="text" class="form-control" id="search-subject" placeholder="Subject">
                     <label for="devMeet"></label>
                 </div>
 
                 <!-- User Selects Date -->
                 <div class="col-md-5ths col-xs-6">
                     <h2>Date</h2>
-                    <input type="text" class="form-control" id="datepicker" placeholder="Select Date...">
+                    <input type="text" class="form-control" id="datepicker" placeholder="Select Date">
                     <label for="datepicker"></label>
                 </div>
 
                 <!-- User Selects Time -->
                 <div class="col-md-5ths col-xs-6">
                     <h2>Time</h2>
-                    <input type="text" class="form-control" id="timepicker" placeholder="Select Time...">
+                    <input type="text" class="form-control" id="timepicker" placeholder="Select Time">
                     <label for="datepicker"></label>
                 </div>
 
